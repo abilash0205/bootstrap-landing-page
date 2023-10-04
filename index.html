@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Page</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .text-center {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="#">Bootstrap Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#table">Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#card">Grid Card</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#alert">Alert</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Table Section -->
+    <section id="table" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center">Table</h2>
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 2</td>
+              <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 2, Cell 1</td>
+              <td>Row 2, Cell 2</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 3, Cell 1</td>
+              <td>Row 3, Cell 2</td>
+              <td>Row 3, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 4, Cell 1</td>
+              <td>Row 4, Cell 2</td>
+              <td>Row 4, Cell 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Card Section -->
+    <section id="card" class="card">
+      <div class="card-header text-center text-primary">Grid Card</div>
+      <div class="card-body row">
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas fuga
+            praesentium nesciunt maiores neque alias officiis quidem sunt esse
+            amet porro aliquid, reiciendis dolore! Consequatur esse est nesciunt
+            maiores beatae! Sed rem ad nam. Animi, autem quidem. Corrupti sequi
+            fugiat consequuntur corporis? Quaerat obcaecati eaque delectus
+            ullam. Cum placeat odio consequuntur delectus maiores debitis animi
+            commodi, perspiciatis perferendis eius et.
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas fuga
+            praesentium nesciunt maiores neque alias officiis quidem sunt esse
+            amet porro aliquid, reiciendis dolore! Consequatur esse est nesciunt
+            maiores beatae! Sed rem ad nam. Animi, autem quidem. Corrupti sequi
+            fugiat consequuntur corporis? Quaerat obcaecati eaque delectus
+            ullam. Cum placeat odio consequuntur delectus maiores debitis animi
+            commodi, perspiciatis perferendis eius et.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid Section -->
+    <section class="container my-5">
+      <div class="row border border-4">
+        <div class="col-4 bg-secondary text-center">Row 1, Col 1</div>
+        <div class="col-4 bg-info text-center">Row 1, Col 2</div>
+        <div class="col-4 bg-secondary text-center">Row 1, Col 3</div>
+        <div class="col-8 bg-info text-center">Row 2, Col 1</div>
+        <div class="col-4 bg-info text-center">Row 2, Col 2</div>
+        <div class="col-12 bg-secondary text-center">Row 3, Col 1</div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" class="container my-5">
+      <h2 class="text-center">Bootstrap Form</h2>
+      <form action="POST">
+        <!-- Text Input -->
+        <div class="mb-3">
+          <label for="textInput" class="form-label">Text Input</label>
+          <input
+            type="text"
+            class="form-control"
+            id="textInput"
+            placeholder="Enter text"
+          />
+        </div>
+
+        <!-- Password Input -->
+        <div class="mb-3">
+          <label for="passwordInput" class="form-label">Password Input</label>
+          <input
+            type="password"
+            class="form-control"
+            id="passwordInput"
+            placeholder="Enter password"
+          />
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="mb-3">
+          <label class="form-label">Radio Buttons</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radioOptions"
+              id="radioOption1"
+              value="option1"
+              checked
+            />
+            <label class="form-check-label" for="radioOption1">Option 1</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radioOptions"
+              id="radioOption2"
+              value="option2"
+            />
+            <label class="form-check-label" for="radioOption2">Option 2</label>
+          </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="mb-3">
+          <label class="form-label">Checkboxes</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox1" />
+            <label class="form-check-label" for="checkbox1">Checkbox 1</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox2" />
+            <label class="form-check-label" for="checkbox2">Checkbox 2</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox3" />
+            <label class="form-check-label" for="checkbox3">Checkbox 3</label>
+          </div>
+        </div>
+
+        <!-- Select Dropdown -->
+        <div class="mb-3">
+          <label for="selectDropdown" class="form-label">Select Dropdown</label>
+          <select class="form-select" id="selectDropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+
+        <!-- File Input -->
+        <div class="mb-3">
+          <label for="fileInput" class="form-label">File Input</label>
+          <input class="form-control" type="file" id="fileInput" />
+        </div>
+
+        <!-- Textarea -->
+        <div class="mb-3">
+          <label for="textarea" class="form-label">Textarea</label>
+          <textarea
+            class="form-control"
+            id="textarea"
+            rows="4"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Alert Functions -->
+    <section id="alert" class="container mb-5">
+      <h2 class="text-center">Alert Functions</h2>
+      <div class="alert alert-success alert-dismissible" role="alert">
+        Logged in successfully!
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+      <div class="alert alert-danger alert-dismissible" role="alert">
+        Error Login In
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container mb-5">
+        <h2 class="text-center mb-3">Contact Us</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Contact Information</h3>
+            <p>Email: contact@mywebsite.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+          </div>
+          <div class="col-md-6">
+            <h3>Get in Touch</h3>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-light btn-primary">
+                Submit
+              </button>
+              <button type="button" class="btn btn-outline-light btn-danger">
+                Cancel
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
